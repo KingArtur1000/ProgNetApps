@@ -3,8 +3,8 @@ package Command;
 import Receiver.Chef;
 
 public class FoodOrder implements OrderCommand {
-    private Chef chef;
-    private String dish;
+    private final Chef chef;
+    private final String dish;
 
     public FoodOrder(Chef chef, String dish) {
         this.chef = chef;
